@@ -5,6 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Classe para centralização de blocos */
@@ -52,11 +53,13 @@ ul li a {
   justify-content: space-between;
 }
 
-.navbar ul {
+.navbar ul, 
+footer nav ul {
   display: flex;
 }
 
-.navbar ul li a {
+.navbar ul li a,
+footer nav ul li a {
   padding: 15px 20px;
   color: #3d6097;
   transition: all 350ms ease-in-out;
@@ -96,13 +99,6 @@ ul li a {
   align-items: center;
 }
 
-.row > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .col-6 {
   width: 50%;
 }
@@ -116,7 +112,7 @@ ul li a {
 }
 
 .col-2 {
-  width: 16.6666666667;
+  width: 16.6666666667%;
 }
 
 .padding-1 {
@@ -141,6 +137,7 @@ h5 {
   color: #fff;
   padding: 15px 20px;
   box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -209,4 +206,85 @@ h2 {
 footer {
   padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn-up {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,.5);
+  border: 1px solid #cc2420;
+  border-radius: 5px;
+  background-color: #cc2420;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #f5f5f5;
+  padding-top: 20px;
+}
+
+.footer-bottom h6 {
+  color: #fff;
+  font-size: 15px;;
+  text-shadow: none;
+}
+
+footer nav ul {
+  justify-content: center;
+}
+
+footer nav ul li a {
+  color: #fff;
+}
+
+.section-testimony {
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 350px;
+}
+
+.section-testimony > .section-testimony-container {
+  text-align: center;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.section-testimony p {
+  font-size: 1.7rem;
+  font-style: italic;
+}
+
+.section-testimony-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3d6097;
+  overflow: hidden;
 }

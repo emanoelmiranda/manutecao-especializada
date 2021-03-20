@@ -118,8 +118,16 @@ footer nav ul li a {
   width: 33.3333333333%;
 }
 
+.col-8 {
+  width: 66.6666666666%;
+}
+
 .col-2 {
   width: 16.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
 }
 
 .padding-1 {
@@ -136,6 +144,10 @@ h5 {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .btn {
@@ -335,6 +347,7 @@ footer nav ul li a {
   background-color: #f5f5f5;
 }
 
+.section-service-institucional .col-6:last-child,
 .section-service-tablet .col-6:last-child{
   display: flex;
   justify-content: flex-end;

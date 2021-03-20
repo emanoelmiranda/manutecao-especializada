@@ -15,17 +15,24 @@ html, body {
   margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6, a, p {
   font-family: 'Anton', sans-serif;
   margin-top: 0;
   text-shadow: 1px 1px 5px rgba(0,0,0,.5);
   font-weight: 100;
 }
 
+p {
+  font-weight: 100 !important;
+  color: #777;
+  text-shadow: none;
+}
+
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: 'Anton', sans-serif;
 }
 
 ul li a {
@@ -317,4 +324,18 @@ footer nav ul li a {
 
 .banner-secondary h1 {
   margin-bottom: 0;
+}
+
+.service-image {
+  border: 7px solid #f5f5f5;
+  width: 80%;
+}
+
+.section-service-tablet {
+  background-color: #f5f5f5;
+}
+
+.section-service-tablet .col-6:last-child{
+  display: flex;
+  justify-content: flex-end;
 }
